@@ -1,8 +1,8 @@
-# Office 365 to IMAP Mail Migration Tool
+# Synchronize Office 365 to IMAP
 
 ![ImapSync Logo](img/imapsync_pixel.png)
 
-A tool to synchronize emails from Office 365 to another IMAP server using OAuth2 authentication and ImapSync.
+A tool to synchronize emails from Office 365 to an IMAP server using OAuth2 authentication and ImapSync.
 
 ## Prerequisites
 
