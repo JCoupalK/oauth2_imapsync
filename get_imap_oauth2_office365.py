@@ -64,11 +64,11 @@ M.authenticate('XOAUTH2', lambda x: generate_auth_string(
     args.email_user, result['access_token']))
 
 try:
-    print(
-        f"Oauth2 token created at: {token_path}\n")
     M.logout()
+    print(
+        f"\nOauth2 token created at: {token_path}\n")
     exit(0)
 except Exception as e:
-    print(f"An error occurred: {e}\n", exec_info=True)
     M.logout()
+    print(f"\nAn error occurred: {e}\n", exec_info=True)
     exit(1)
