@@ -66,7 +66,9 @@ M.authenticate('XOAUTH2', lambda x: generate_auth_string(
 try:
     print(
         f"Oauth2 token created at: {token_path}\n")
+    M.logout()
     exit(0)
 except Exception as e:
     print(f"An error occurred: {e}\n", exec_info=True)
+    M.logout()
     exit(1)
